@@ -1,0 +1,27 @@
+.text{
+    color: #344d67;
+}
+.t-1{
+    font-size: 40px;
+    margin-top: 67px;
+}
+.t-3{
+    margin-top: 33px;
+}
+.t-4{
+    margin: 0px 2px;
+}
+.t-5{
+    margin-top: 32px;
+}
+.containerbutton{
+    gap: 6px;
+}
+.button-wel{
+    width: 113px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-right: 10px;
+    background-color: #344d67;
+    color: #6eccaf;
+}

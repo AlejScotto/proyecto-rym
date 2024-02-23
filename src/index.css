@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;900&display=swap');
+body {
+  margin: 0;
+  background-image: url("./rickymorty.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+}
+.h1{
+  font-weight: 300;
+  color: #344d67;
+}
+.bgConteiner{
+  height: 600px;
+  width: 600px;
+  background-color:#ffffffe6;
+  justify-self: center;
+}
