@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import './filtro.css';
 
-export default function Filtro({ param, onFiltroChange }) {
+export default function Filtro({ param, onFiltroChange, text }) {
     const [filtro, setFiltro] = useState("All"); // Inicializado como "All" por defecto
 
     const handleFiltroChange = () => {
@@ -11,15 +12,16 @@ export default function Filtro({ param, onFiltroChange }) {
     };
 
     return (
-        <div>
+        <div className="filter-2 rounded-3 form-check form-switch">
             <input
+                className="input-form form-check-input"
                 type="checkbox"
                 role='switch'
                 value={"Alive"}
                 checked={filtro === param }
                 onChange={handleFiltroChange}
             />
-            <label htmlFor="">Character Alive</label>
+            <label className="form-check-label" htmlFor="">{ text }</label>
         </div>
     );
 }

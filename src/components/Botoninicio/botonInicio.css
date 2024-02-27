@@ -5,4 +5,12 @@
     margin-right: 10px;
     background-color: #344d67;
     color: #6eccaf;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+
+    &:hover{
+        background-color: #6eccaf;
+        color: #344d6f;
+    }
 }

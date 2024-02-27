@@ -1,7 +1,17 @@
 .container-card {
     background-color: #223142;
-    width: 320px;
     height: 440px;
     margin: 8px;
     padding: 8px;
+    width: 315px;
+}
+
+.t-title {
+    color: #6eccaf;
+    font-size: 32px;
+}
+
+.b-card {
+    background-color: #6eccaf;
+    color: #344d67;
 }

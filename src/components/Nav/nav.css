@@ -1,0 +1,32 @@
+.container-nav {
+    background-color: #344d67;
+    height: 160px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.t-rm {
+    color: #6eccaf;
+    padding: 40px 80px;
+}
+
+.container-items {
+    gap: 16px;
+    padding: 25px 32px 25px 25px;
+}
+
+.nav-link {
+    color: #6eccaf !important;
+    padding: 8px;
+}
+
+.nav-link.active {
+    background-color: #6eccaf !important;
+    color: #344d67  !important;
+    padding: 8px !important;
+    width: 97px !important;
+    text-decoration: none;
+}
+

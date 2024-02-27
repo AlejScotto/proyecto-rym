@@ -1,7 +1,8 @@
+import { useState, useEffect } from 'react';
 import NavBarComponent from "../../components/Nav";
 import Cards from "../../components/Cards";
 import Filtro from "../../components/filtro";
-import { useState, useEffect } from 'react';
+import './characters.css';
 
 export default function Characters() {
     const [data, setData] = useState([]);
@@ -37,10 +38,18 @@ export default function Characters() {
     return (
         <>
             <NavBarComponent />
-            <Filtro param="Alive" a="status" onFiltroChange={handleFiltroChange} />
-            <Filtro param="Male" a="gender" onFiltroChange={handleFiltroChange} />
+            <div className="filter-section mx-4 mt-5" >
+                <h2 className='mb-3'>Filters</h2>
+                <div className="c-form d-flex justify-content-between">
+                    <Filtro param="Alive" a="status" text="Character Alive" onFiltroChange={handleFiltroChange} />
+                    <Filtro param="Male" a="gender" text="Character Dead" onFiltroChange={handleFiltroChange} />
+                    <Filtro param="Alive" a="status" text="Female" onFiltroChange={handleFiltroChange} />
+                    <Filtro param="Male" a="gender" text="Male" onFiltroChange={handleFiltroChange} />
+                    <Filtro param="Alive" a="status" text="Origin Unknown" onFiltroChange={handleFiltroChange} />
+                </div>
+            </div>
 
-            <div className="row row-cols-1 row-cols-md-3 g-4">
+            <div className="section-cards d-flex aling-items-center m-0 row justify-content-center w-100 pt-5">
                 {data.map(item => (
                     <Cards key={item.id} data={item} />
                 ))}
