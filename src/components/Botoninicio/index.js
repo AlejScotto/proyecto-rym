@@ -1,6 +1,8 @@
-import '../Botoninicio/botonInicio
-export default function botonInicio(nombreBoton){
+import '../BotonInicio/botonInicio.css';
+import { Link } from 'react-router-dom';
+
+export default function BotonInicio({nombreBoton, path}){
     return(
-        <button className="btnInicio">{nombreBoton}</button>
+        <Link to={path} className="btnInicio">{nombreBoton}</Link>
     )
 }
