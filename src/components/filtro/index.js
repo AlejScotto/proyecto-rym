@@ -1,27 +1,18 @@
 import React, { useState } from 'react';
 import './filtro.css';
 
-export default function Filtro({ param, onFiltroChange, text }) {
-    const [filtro, setFiltro] = useState("All"); // Inicializado como "All" por defecto
-
-    const handleFiltroChange = () => {
-        const nuevoFiltro = filtro === "All" ? param : "All"; // Cambia el filtro entre "All" y "Alive"
-        setFiltro(nuevoFiltro);
-        onFiltroChange(nuevoFiltro); // Llama a la función proporcionada por el padre con el nuevo filtro
-        console.log("FILTRO",filtro)
-    };
-
-    return (
-        <div className="filter-2 rounded-3 form-check form-switch">
-            <input
-                className="input-form form-check-input"
-                type="checkbox"
-                role='switch'
-                value={"Alive"}
-                checked={filtro === param }
-                onChange={handleFiltroChange}
+export default function Filtro({title,filterName,filterCharacter}) {
+   
+    return(
+        <div className="form-check form-switch">
+            <input className="form-check-input" 
+                type="checkbox" 
+                role="switch" 
+                id={filterName} 
+                value={filterName} 
+                onClick={(event)=>filterCharacter(event.target)} 
             />
-            <label className="form-check-label" htmlFor="">{ text }</label>
+            <label className="form-check-label" htmlFor={filterName}>{title}</label>
         </div>
-    );
+    )
 }

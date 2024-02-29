@@ -1,0 +1,9 @@
+.filter, .filter-2 {
+    background-color: #344d67;
+    color: #6eccaf;
+    margin: 0;
+    padding: 8px 48px;
+}
+.filter-section {
+    min-height: 100px;
+}

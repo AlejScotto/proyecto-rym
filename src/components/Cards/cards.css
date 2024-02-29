@@ -3,7 +3,9 @@
     height: 440px;
     margin: 8px;
     padding: 8px;
-    width: 315px;
+    min-width: 315px;
+    width: auto;
+    border-radius: 6px;
 }
 
 .t-title {
